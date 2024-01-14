@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --FONT: 'Montserrat', sans-serif;
+    --LinearGradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+     /* ### Neutral  */
+    --VeryLightGrayishBlue: hsl(240, 78%, 98%);
+    --LightGrayishBlue: hsl(234, 14%, 74%);
+    --GrayishBlue: hsl(233, 13%, 49%);
+    --DarkGrayishBlue: hsl(232, 13%, 33%);
+}
+body {
+min-height: 100vh;
+overflow-x: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+background-color: var(--neutral-Very-Light-Grayish-Blue);
+background-image: url('images/bg-top.svg'), url(images/bg-bottom.svg);
+background-repeat: no-repeat;
+background-position: 100% 0%, 0% 100%;
+background-size: 25%, 25%;
+background-color: var(--VeryLightGrayishBlue);
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.bottom{
+    display: flex;
+    align-content: end;
+    justify-content: center;
+}
+.card{
+    margin-top: 1em;
+    height: fit-content;
+    padding: 1em 2.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 20vw;
+    background-color: var(--VeryLightGrayishBlue);
+    border-radius: 10px;
+    font-family: var(--FONT);
+    box-shadow: 0px 10px 30px rgb(194, 194, 194);
+}
+.bottom__span{
+font-size: 1vw;
+color: var(--GrayishBlue);
+margin-block: 0.7em;
+}
+.bottom__h2{
+    font-size: 4vw;
+    color: var(--DarkGrayishBlue);
+    font-family: var(--FONT);
+    display: flex;align-items: center;
+    justify-content: center;
+}
+.bottom__btn{
+    padding: 1.3em 0em;
+    background-image: linear-gradient( to right , hsl(236, 72%, 79%),   hsl(237, 63%, 64%));
+    border-radius: 5px;
+    font-family: var(--FONT);
+    color:var(--VeryLightGrayishBlue);
+    font-size: 0.7vw;
+    letter-spacing: 1px;
+    margin-bottom: 0.7em;
+    border: 1px solid white;
+    margin-top: 1em;
+}
+.card__professional{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 20vw;
+    border-radius: 10px;
+    font-family: var(--FONT);
+    box-shadow: 0px 10px 30px rgb(194, 194, 194);
+    background-image: linear-gradient( hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    padding: 2em 2.3em;
+}
+.bottom__btn__professional{
+    background-color: white;
+    background-image: none;
+    font-size: 0.7vw;
+    letter-spacing: 1px;
+    padding: 1.3em 0em;
+    border-radius: 5px;
+    color: hsl(237, 63%, 64%);
+    margin-bottom: 0.9em;
+    border: 1px solid transparent;
+}
+.bottom__span__professional{
+    color:  var(--VeryLightGrayishBlue);
+}
+.bottom__h2__professional{
+    color: var(--VeryLightGrayishBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dolar{
+    font-size: 2.3vw; 
+    margin-right: 0.5vmax;
+}
+.top__h1{
+    color: var(--GrayishBlue);
+    font-family: var(--FONT);
+    font-size: 2vw;
+}
+
+.top__slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider__con{
+    width: 4vmax;
+    height: 2vmax;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%));
+    border-radius: 2vmax;
+    border: none;
+    cursor: pointer;
+    padding: .2em 0em;
+}
+.top__span{
+    margin-inline: 2em;
+    color: var(--LightGrayishBlue);
+    font-family: var(--FONT);
+    font-size: 0.9vw;
+   
+}
+.switch{
+    position: relative;
+    width: 1.3vmax;
+    height: 1.3vmax;
+    border-radius: 50%;
+    background-color: white;
+    margin-inline: 0.2vmax;
+}
+.slider__con:hover{
+    opacity: 0.7;
+}
+.bottom__btn:hover {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid hsl(237, 89%, 75%);
+    color: hsl(237, 88%, 75%);
+    cursor: pointer;
+}
+.bottom__btn__professional:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    border: 1px solid var(--VeryLightGrayishBlue);
+}
