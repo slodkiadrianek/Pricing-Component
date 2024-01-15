@@ -47,19 +47,20 @@ background-color: var(--VeryLightGrayishBlue);
     display: flex;
     flex-direction: column;
     gap: 1em;
-    width: 20vw;
+    width: 20vmax;
     background-color: var(--VeryLightGrayishBlue);
     border-radius: 10px;
     font-family: var(--FONT);
     box-shadow: 0px 10px 30px rgb(194, 194, 194);
+    margin-bottom: 1em;
 }
 .bottom__span{
-font-size: 1vw;
+font-size: 1vmax;
 color: var(--GrayishBlue);
 margin-block: 0.7em;
 }
 .bottom__h2{
-    font-size: 4vw;
+    font-size: 4vmax;
     color: var(--DarkGrayishBlue);
     font-family: var(--FONT);
     display: flex;align-items: center;
@@ -71,7 +72,7 @@ margin-block: 0.7em;
     border-radius: 5px;
     font-family: var(--FONT);
     color:var(--VeryLightGrayishBlue);
-    font-size: 0.7vw;
+    font-size: 0.7vmax;
     letter-spacing: 1px;
     margin-bottom: 0.7em;
     border: 1px solid white;
@@ -82,7 +83,7 @@ margin-block: 0.7em;
     display: flex;
     flex-direction: column;
     gap: 1em;
-    width: 20vw;
+    width: 20vmax;
     border-radius: 10px;
     font-family: var(--FONT);
     box-shadow: 0px 10px 30px rgb(194, 194, 194);
@@ -92,7 +93,7 @@ margin-block: 0.7em;
 .bottom__btn__professional{
     background-color: white;
     background-image: none;
-    font-size: 0.7vw;
+    font-size: 0.7vmax;
     letter-spacing: 1px;
     padding: 1.3em 0em;
     border-radius: 5px;
@@ -109,14 +110,11 @@ margin-block: 0.7em;
     align-items: center;
     justify-content: center;
 }
-.dolar{
-    font-size: 2.3vw; 
-    margin-right: 0.5vmax;
-}
+
 .top__h1{
     color: var(--GrayishBlue);
     font-family: var(--FONT);
-    font-size: 2vw;
+    font-size: 2vmax;
 }
 
 .top__slider{
@@ -138,7 +136,7 @@ margin-block: 0.7em;
     margin-inline: 2em;
     color: var(--LightGrayishBlue);
     font-family: var(--FONT);
-    font-size: 0.9vw;
+    font-size: 0.9vmax;
    
 }
 .switch{
@@ -148,6 +146,7 @@ margin-block: 0.7em;
     border-radius: 50%;
     background-color: white;
     margin-inline: 0.2vmax;
+    transition: 1s all;
 }
 .slider__con:hover{
     opacity: 0.7;
@@ -164,4 +163,20 @@ margin-block: 0.7em;
     cursor: pointer;
     color: white;
     border: 1px solid var(--VeryLightGrayishBlue);
+}
+.move{
+    transform: translateX(2vmax);
+    transition: 1s all ;
+}
+
+@media (max-width: 800px) {
+    .bottom{
+        flex-direction: column;
+        }
+    .card{
+        width: 30vmax;
+    }
+    .card__professional{
+        width: 30vmax;
+    }
 }
